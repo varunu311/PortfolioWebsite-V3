@@ -31,6 +31,4 @@ window.addEventListener("wheel", function(e) {
 	  letter.style.animationDelay = (i * 0.1) + 's';
 	})
   });
-
-  
  

@@ -1,9 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
 
+.cursor2 {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: rgb(255, 255, 255);
+  opacity: .5;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: width .3s, height .3s, opacity .3s;
+}
+
 * {
     padding: 0;
     margin: 0;
       font-family: 'Work Sans', sans-serif;
+      cursor: none;
 
   }
   
