@@ -1,33 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
 
-*{
-  font-family: 'Work Sans', sans-serif;
-}
-
-#loader{
-    background: #000000e7 url("/Assests/loader-1.gif") no-repeat center center;
-    background-size: 30vh;
-    height: 100vh;
-    width: 100%;
-    position:fixed;
-    z-index: 100;
-}
-
-body {
-    overflow-x: hidden;
-    height: 100vh;
-    overflow-y: scroll;
-    background-color: rgb(12, 3, 26);
-}
-
-
-body, html {
-    margin: 0;
+* {
     padding: 0;
-    font-family: Arial, sans-serif;
-}
+    margin: 0;
+      font-family: 'Work Sans', sans-serif;
 
-nav {
+  }
+  
+  nav {
     background-color: rgba(25, 13, 43, 0.774);
     padding: 20px 0;
     position: fixed;
@@ -62,36 +42,125 @@ nav ul li a:hover {
     background-color: rgb(51, 139, 254);
 }
 
+
 .cv-butn{
-  background-color: rgb(51, 139, 254);
-  margin-top: 0;
-  color: white;
-  font-size: 1.25vh;
-  margin-bottom:0; 
-  padding: 5px;
-  text-decoration: none;
-  box-decoration-break: none;
-  border-radius: 5px;
-  border: none;
-  border: 5px;
-  height: 30px;
-  width: 100px;
-  margin: 0;
+    background-color: rgb(51, 139, 254);
+    margin-top: 0;
+    color: white;
+    font-size: 1.25vh;
+    margin-bottom:0; 
+    padding: 5px;
+    text-decoration: none;
+    box-decoration-break: none;
+    border-radius: 5px;
+    border: none;
+    border: 5px;
+    height: 30px;
+    width: 100px;
+    margin: 0;
+  
+  }
+  .cv-butn:hover{
+    background-color: rgb(51, 139, 254);
+    color: white;
+    font-size: 1.25vh;
+    padding: 5px;
+    text-decoration: none;
+    box-decoration-break: none;
+    border-radius: 5px;
+    border: none;
+    border: 5px;
+    height: 30px;
+    width: 100px;
+    margin: 0;
+    background-color:#6237b3;
+  }
+  
 
-}
-.cv-butn:hover{
-  background-color: rgb(51, 139, 254);
-  color: white;
-  font-size: 1.25vh;
-  padding: 5px;
-  text-decoration: none;
-  box-decoration-break: none;
-  border-radius: 5px;
-  border: none;
-  border: 5px;
-  height: 30px;
-  width: 100px;
-  margin: 0;
-  background-color:#6237b3;
-}
-
+  .wrapper {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #div-mask-front,
+  #div-mask-back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  #div-mask-front p,
+  #div-mask-back p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 30px;
+  }
+  
+  #div-mask-back {
+    --m1: 0.1%;
+    --m2: 0%;
+    --mask: radial-gradient(
+      circle at var(--x, 50%) var(--y, 50%),
+      black var(--m1),
+      transparent var(--m2)
+    );
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  
+    -webkit-mask-image: var(--mask);
+    mask-image: var(--mask);
+  }
+  
+  #div-mask-front h1 {
+    font-size: 80px;
+    color:white;
+  }
+  
+  #div-mask-back pre {
+    color: white;
+    font-size: 16px;
+  }
+  
+  .area {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  
+  
+  
+  pre {
+    backdrop-filter: blur(15px) saturate(100%);
+    -webkit-backdrop-filter: blur(15px) saturate(100%);
+    border-radius: 12px;
+    background-color: rgba(47, 20, 97, 0.423);
+    padding: 2rem 1rem;
+  }
+  
+  pre .variable {
+    color: #9cdcfe;
+  }
+  
+  pre .string {
+    color: #ce9178;
+  }
+  
+  pre .character {
+    color: #d4d4d4;
+  }
+  
+  pre .bracket {
+    color: #ffd700;
+  }
+  
+  pre .number {
+    color: #b5cea8;
+  }
+  
