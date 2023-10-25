@@ -54,6 +54,7 @@ nav {
 }
 
 nav ul {
+
     list-style: none;
     padding: 0;
     margin: 0 auto;
@@ -225,36 +226,41 @@ h1 {
     writing-mode: vertical-lr;
     font-size: 10vh;
   }
-
-  .cv-butn{
-    background-color: rgb(51, 139, 254);
-    color: white;
-    font-size: 15px;
-    padding: 1%;
-    text-decoration: none;
-    box-decoration-break: none;
-    border-radius: 5%;
-    border: none;
-    border: 5px;
-    height: 4vh;
-    width: 100px;
   
-  }
-  .cv-butn:hover{
-    background-color: rgb(51, 139, 254);
-    color: white;
-    font-size: 1.25vh;
-    padding: 5px;
-    text-decoration: none;
-    box-decoration-break: none;
-    border-radius: 5px;
-    border: none;
-    border: 5px;
-    height: 30px;
-    width: 100px;
-    margin: 0;
-    background-color:#6237b3;
-  }
+.cv-butn{
+  background-color: rgb(51, 139, 254);
+  margin-top: 0;
+  color: white;
+  font-size: 1.25vh;
+  margin-bottom:0; 
+  padding: 5px;
+  text-decoration: none;
+  box-decoration-break: none;
+  border-radius: 5px;
+  border: none;
+  border: 5px;
+  height: 30px;
+  width: 100px;
+  margin: 0;
+
+}
+
+.cv-butn:hover{
+  background-color: rgb(51, 139, 254);
+  color: white;
+  font-size: 1.25vh;
+  padding: 5px;
+  text-decoration: none;
+  box-decoration-break: none;
+  border-radius: 5px;
+  border: none;
+  border: 5px;
+  height: 30px;
+  width: 100px;
+  margin: 0;
+  background-color:#6237b3;
+}
+
   
 
   h1 {

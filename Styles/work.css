@@ -70,6 +70,7 @@ nav ul li {
   display: inline-block;
 }
 
+
 nav ul li a {
   color: white;
   text-decoration: none;
@@ -122,13 +123,12 @@ nav ul li a:hover {
 }
 
 .section {
-  background-color: red;
   margin: 10px;
   position: relative;
   display: flex;
   align-items: center;
   min-width: 90vw;
-  margin-top: 5%;
+  margin-top: 10vh;
   height: 85vh;
   font-size: 50px;
   font-weight: bold;
