@@ -26,6 +26,4 @@ window.addEventListener("mousemove", (e) => {
   });
 });
 
-/* CREDIT */
-// background animation : https://codepen.io/alvarotrigo/pen/GRvYNax
-// mask : https://codepen.io/kartikth40/pen/XWMOReZ
+const swup = new Swup();
