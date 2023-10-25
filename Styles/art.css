@@ -29,50 +29,52 @@ body {
   background-image: url('/Assests/back.jpg');
     overflow-x: hidden;
     height: 100vh;
+    width: 100vw;
     overflow-y: scroll;
     background-color: rgb(12, 3, 26);
 }
 
-
 body, html {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
 }
 
 nav {
-    background-color: rgba(25, 13, 43, 0.774);
-    padding: 20px 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 99;
-    box-shadow: 5px 2px 5px rgba(255, 255, 255, 0.268);
+  background-color: rgba(25, 13, 43, 0.774);
+  padding: 2vh;
+  position: fixed;
+  width: 100vw;
+  height: 1vh;
+  top: 0;
+  z-index: 99;
+  box-shadow: 5px 2px 5px rgba(255, 255, 255, 0.268);
+  padding-bottom: 4vh;
 }
 
 nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0 auto;
-    width: 70%;
-    text-align: center;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  width: 100vw;
+  height: 5vh;
+  text-align: center;
 }
 
 nav ul li {
-    display: inline-block;
-    margin: 0 20px;
+  display: inline-block;
 }
 
 nav ul li a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
+  color: white;
+  text-decoration: none;
+  padding: 1vh 1vw;
+  border-radius: 5px;
+  transition: background-color 0.3s;
 }
 
 nav ul li a:hover {
-    background-color: rgb(51, 139, 254);
+  background-color: rgb(51, 139, 254);
 }
 
 .cv-butn{
@@ -287,3 +289,4 @@ nav ul li a:hover {
 .project.project--hovered .project__image img {
   transform: scale(1.12);
 }
+
