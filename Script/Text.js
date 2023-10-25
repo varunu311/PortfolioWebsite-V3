@@ -6,7 +6,7 @@ var spanText = function spanText(text) {
 	  else spaned += '<span>' + string.substring(i, i + 1) + '</span>';
 	}
 	text.innerHTML = spaned;
-  }
+  } 
   
   let headline = document.querySelector("h1");
   

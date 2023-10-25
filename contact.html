@@ -4,18 +4,10 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Portfolio</title>
-        <link rel="stylesheet" href="/Styles/index.css">
-        <script src="https://unpkg.com/swup@4"></script>
-        <style>
-            html.is-changing .transition-fade {
-              transition: opacity 0.25s;
-              opacity: 1;
-            }
-            html.is-animating .transition-fade {
-              opacity: 0;
-            }
-        </style>
+        <link rel="stylesheet" href="/Styles/contact.css">
+        <script src="/Script/contact.js"></script>
     </head>
+    
     <body>
         <div id="loader"></div>
         <script src="/Script/Loader.js"></script>
@@ -28,24 +20,37 @@
                 <button class="cv-butn" type="button"><a href="/Assests/Resume.pdf" download="Varun_Resume.pdf" style="text-decoration: none; color: white;">Download CV</a></button>
             </ul>
         </nav> 
-        <main id="swup" class="transition-fade">
-            <div class="section-container">
-                <section class="section">
-                        <div class="wrapper">
-                            <div style="background-color: rgba(78, 69, 95, 0.434); height: 100px; place-content: center; place-items: center; margin-top: 48vh; margin-left: 87vw;   padding:10px; width:140px; height: 125px; border-radius: 15px; align-items: center; align-content: center; display:inline-block;">
-                                <a href="https://github.com/varunu311" target="_blank"><img src ="/Assests/github.png" width="30" height="30" style=" border:solid white 1px; padding: 10px; border-radius: 10%; margin: 5px;" /></a>
-                                <a href="https://www.linkedin.com/in/vupadhy/" target="_blank"><img src ="/Assests/linkedin.png" width="30" height="30" style=" border:solid white 1px; padding: 10px; border-radius: 10%; margin: 5px;"/></a>
-                                <a href="https://github.com/varunu311" target="_blank"><img src ="/Assests/github.png" width="30" height="30" style=" border:solid white 1px; padding: 10px; border-radius: 10%; margin: 5px;"  /></a>
-                                <a href="https://www.linkedin.com/in/vupadhy/" target="_blank"><img src ="/Assests/linkedin.png" width="30" height="30" style=" border:solid white 1px; padding: 10px; border-radius: 10%; margin: 5px;"/></a>
-                            </div>
-                        </div>
-                </section>
+        <div class="cursor2"></div>
+
+        <main>
+          <div class="cursor2"></div>
+
+            <div class="login-box">
+                <h2>Message Me</h2>
+                <form method="post" action="mailto:varunu211@gmail.com?subject=subject&message=message">
+                  <div class="user-box">
+                    <input type="text" name="" required="">
+                    <label>Message</label>
+                  </div>
+                  <a href="#">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Send
+                  </a>
+                </form>
+              </div>
+
+                <div style="background-color: rgba(78, 69, 95, 0.434); height: 100px; place-content: center; place-items: center; margin-top: 80vh; margin-left: 87vw;   padding:10px; width:130px; height: 125px; border-radius: 15px; align-items: center; align-content: center; display:inline-block;">
+                    <a href="https://github.com/varunu311" target="_blank"><img src ="/Assests/github.png" width="30" height="30" style=" border:solid white 1px; padding: 10px; border-radius: 10%; margin: 5px;" /></a>
+                    <a href="https://www.linkedin.com/in/vupadhy/" target="_blank"><img src ="/Assests/linkedin.png" width="30" height="30" style=" border:solid white 1px; padding: 10px; border-radius: 10%; margin: 5px;"/></a>
+                    <a href="https://github.com/varunu311" target="_blank"><img src ="/Assests/github.png" width="30" height="30" style=" border:solid white 1px; padding: 10px; border-radius: 10%; margin: 5px;"  /></a>
+                    <a href="https://www.linkedin.com/in/vupadhy/" target="_blank"><img src ="/Assests/linkedin.png" width="30" height="30" style=" border:solid white 1px; padding: 10px; border-radius: 10%; margin: 5px;"/></a>
+                </div>
             </div>
         </main>
     </body>
-
-    <div class="cursor2"></div>
     <script src="/Script/Cursor.js"></script>
-    <script src="/Script/index.js"></script>
-    <script src="/Script/Text.js"></script>
+    <script src="/Script/contact.js"></script>
 </html>
