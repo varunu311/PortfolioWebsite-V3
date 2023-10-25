@@ -138,6 +138,7 @@ nav ul li a:hover {
   align-content: center;
   justify-items: center;
   justify-content: center;
+
 }
 
 .section:hover {
@@ -158,7 +159,7 @@ nav ul li a:hover {
   align-content: center;
   justify-items: center;
   justify-content: center;
-  transition: .5s;
+  transition: .75s;
 
 }
 
