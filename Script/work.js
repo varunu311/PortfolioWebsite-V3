@@ -1,5 +1,4 @@
 gsap.registerPlugin(ScrollTrigger);
-
 // Sections
 const sections = gsap.utils.toArray(".section");
 
@@ -26,3 +25,4 @@ gsap.to(sections, {
     invalidateOnRefresh: true
   }
 });
+
