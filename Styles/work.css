@@ -127,11 +127,10 @@ nav ul li a:hover {
   position: relative;
   display: flex;
   align-items: center;
-  min-width: 90vw;
+  min-width: 95vw;
   margin-top: 10vh;
   height: 85vh;
   font-size: 50px;
-  font-weight: bold;
   border-radius: 25px;
   display: grid;
   position: relative;
@@ -141,9 +140,31 @@ nav ul li a:hover {
   justify-content: center;
 }
 
+.section:hover {
+  margin: 10px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-width: 95vw;
+  margin-top: 10vh;
+  height: 85vh;
+  font-size: 50px;
+  border-radius: 25px;
+  border: white solid 1px;
+  background: transparent;
+  display: grid;
+  position: relative;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+  justify-content: center;
+  transition: .5s;
+
+}
+
 .section__large {
   background-size: cover;
-  background-color: rgba(50, 3, 96, 0.262);
+  background-color: rgba(3, 8, 41, 0.795);
   width: 100vw;
 }
 
