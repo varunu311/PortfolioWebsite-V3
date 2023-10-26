@@ -21,14 +21,13 @@
   }
 
 nav {
-    background-color: rgba(25, 13, 43, 0.774);
+    background-color: rgba(255, 255, 255, 0);
     padding: 2vh;
     position: fixed;
     width: 100vw;
     height: 1vh;
     top: 0;
-    z-index: 99;
-    box-shadow: 5px 2px 5px rgba(255, 255, 255, 0.268);
+    z-index: 1;
     padding-bottom: 4vh;
 }
 
@@ -152,10 +151,13 @@ nav ul li a:hover {
   
   
   pre {
+    width: 75vw;
+    height: 75vh;
     backdrop-filter: blur(15px) saturate(100%);
     -webkit-backdrop-filter: blur(15px) saturate(100%);
     border-radius: 12px;
-    background-color: rgba(47, 20, 97, 0.423);
+    background-color: rgb(13, 7, 41);
+    box-shadow: rgba(53, 55, 61, 0.807) 10px 10px;
     padding: 2rem 1rem;
   }
   
@@ -178,4 +180,20 @@ nav ul li a:hover {
   pre .number {
     color: #b5cea8;
   }
+
+  body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0);
+    z-index: 1000; 
+    transition: 0.5s;
+    pointer-events: none;
+  }
   
+  body.clicked::after {
+    background: rgb(21, 20, 20);
+  }

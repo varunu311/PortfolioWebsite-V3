@@ -11,6 +11,5 @@ window.addEventListener("wheel", function(e) {
     sectionContainer.style.transform = `translateY(-${currentSection * 100}vh)`;
 });
 
-  const swup = new Swup();
 
  

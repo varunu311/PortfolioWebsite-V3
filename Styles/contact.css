@@ -42,14 +42,12 @@ body, html {
 }
 
 nav {
-  background-color: rgba(25, 13, 43, 0.774);
   padding: 2vh;
   position: fixed;
   width: 100vw;
   height: 1vh;
   top: 0;
   z-index: 99;
-  box-shadow: 5px 2px 5px rgba(255, 255, 255, 0.268);
   padding-bottom: 4vh;
 }
 
@@ -198,7 +196,7 @@ nav ul li a:hover {
     box-shadow: 0 0 5px #8825df
                 0 0 25px #8825df,
                 0 0 50px #8825df,
-                0 0 100px #8825df;
+                0 0 100px #ffffff;
   }
   
   .login-box a span {
@@ -279,4 +277,25 @@ nav ul li a:hover {
     50%,100% {
       bottom: 100%;
     }
+  }
+
+
+
+
+
+  body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0);
+    z-index: 1000; 
+    transition: 0.5s;
+    pointer-events: none;
+  }
+  
+  body.clicked::after {
+    background: rgb(21, 20, 20);
   }

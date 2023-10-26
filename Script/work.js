@@ -26,3 +26,6 @@ gsap.to(sections, {
   }
 });
 
+const swup = new Swup();
+
+
