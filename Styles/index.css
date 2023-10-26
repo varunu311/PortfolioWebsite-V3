@@ -364,10 +364,6 @@ h1 {
     }
   }
 
-
-
-  
-
 body::after {
   content: "";
   position: fixed;
